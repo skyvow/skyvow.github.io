@@ -52,10 +52,9 @@ class SiderBar extends React.Component {
                         <div>
                             {basics.profiles.map((n, i) => {
                                 const cls = classNames({
-                                    'fs-2x': true,
+                                    'iconfont': true,
                                     'social-link': true,
-                                    [`link-${n.network}`]: n.network,
-                                    [`icon-${n.network}`]: n.network,
+                                    [`iconfont-${n.network}`]: n.network,
                                 })
                                 return <a key={i} className={cls} href={n.url} target="_blank"></a>
                             })}

@@ -20,11 +20,21 @@ class Content extends React.Component {
                             </div>
                             <div className="info">
                                 <h4 className="title text-uppercase">自我描述</h4>
-                                <div className="card card-nested">
-                                    <div className="content mop-wrapper">
-                                        <p>{basics.summary}</p>
-                                    </div>
-                                </div>
+                                <ul className="list-unstyled clear-margin">
+                                    <li className="card card-nested clearfix">
+                                        <div className="content mop-wrapper">
+                                            <ul>
+                                                {basics.summary.map((v, k) => {
+                                                    return (
+                                                        <li key={k} className="mop-wrapper">
+                                                            <p>{v}</p>
+                                                        </li>
+                                                    )
+                                                })}
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div className="detail" id="work-experience">
@@ -38,9 +48,12 @@ class Content extends React.Component {
                                         return (
                                             <li key={i} className="card card-nested clearfix">
                                                 <div className="content">
-                                                    <p className="clear-margin relative">
-                                                        <strong>{n.position}</strong>,&nbsp;<a href={n.website} target="_blank">{n.company}</a>
-                                                    </p>
+                                                    <div className="header">
+                                                        <h4 className="header-title">
+                                                            <a href={n.website} target="_blank">{n.company}</a>
+                                                        </h4>
+                                                        <p className="header-text">{n.position}</p>
+                                                    </div>
                                                     <p className="text-muted">
                                                         <small><span className="space-right">{n.startDate} - {n.endDate}</span></small>
                                                     </p>
@@ -107,9 +120,12 @@ class Content extends React.Component {
                                             return (
                                                 <li key={i} className="card card-nested">
                                                     <div className="content">
-                                                        <p className="clear-margin relative">
-                                                            <strong>{n.position}, </strong><a href={n.website} target="_blank">{n.organization}</a>
-                                                        </p>
+                                                        <div className="header">
+                                                            <h4 className="header-title">
+                                                                <a href={n.website} target="_blank">{n.organization}</a>
+                                                            </h4>
+                                                            <p className="header-text">{n.position}</p>
+                                                        </div>
                                                         <p className="text-muted">
                                                             <small>{n.startDate} - {n.endDate}</small>
                                                         </p>
@@ -145,9 +161,12 @@ class Content extends React.Component {
                                             return (
                                                 <li key={i} className="card card-nested">
                                                     <div className="content">
-                                                        <p className="clear-margin">
-                                                            <strong><a href={n.website} target="_blank">{n.name}</a>&nbsp;,&nbsp;</strong>{n.publisher}
-                                                        </p>
+                                                        <div className="header">
+                                                            <h4 className="header-title">
+                                                                <a href={n.website} target="_blank">{n.name}</a>
+                                                            </h4>
+                                                            <p className="header-text">{n.publisher}</p>
+                                                        </div>
                                                         <p className="text-muted">
                                                             <small>{n.releaseDate}</small>
                                                         </p>

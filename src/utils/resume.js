@@ -6,13 +6,23 @@ export default {
         'email': '724355924@qq.com',
         'phone': '18521708248',
         'website': 'https://github.com/skyvow',
-        'summary': '个人主攻 web 前端和 nodejs 开发，2年+前端开发经验，喜欢关注 web 前端相关新技术，对于新技术有很强的学习兴趣，喜欢折腾造轮子，不定时更新 github 小项目，热爱前端这份工作，也热爱一切美好的事物，对于我来说，是一种责任、是一种快乐。',
+        'summary': [
+            '个人主攻 web 前端和 nodejs 开发，2年+前端开发经验。',
+            '喜欢关注 web 前端相关新技术，对于新技术有很强的学习兴趣。',
+            '喜欢折腾造轮子，不定时更新 github 小项目。',
+            '热爱前端这份工作，也热爱一切美好的事物，对于我来说，是一种责任、是一种快乐。'
+        ],
         'location': '上海市浦东新区',
         'profiles': [
             {
                 'network': 'github',
                 'username': 'skyvow',
                 'url': 'https://github.com/skyvow'
+            },
+            {
+                'network': 'zhihu',
+                'username': 'skyvow',
+                'url': 'https://www.zhihu.com/people/skyvow'
             }
         ]
     },
@@ -71,7 +81,9 @@ export default {
             'endDate': '2017.04',
             'summary': 'react、react-router、redux、wepack、es6、postcss',
             'highlights': [
-                '基于 react + antd 前端框架开发，采用 webpack 作为自动化构建工具'
+                '基于 react + antd 前端框架开发，采用 webpack 作为自动化构建工具',
+                '基于 nodejs 开发环境，使用 webpack 自动化构建工具，实时编译代码，热更新',
+                '采用 redux 管理前端数据流'
             ]
         },
         {
@@ -192,6 +204,13 @@ export default {
             'releaseDate': '2016-10',
             'website': 'https://github.com/skyvow/wux',
             'summary': 'wux - 微信小程序自定义组件（对话框、指示器、五星评分...）'
+        },
+        {
+            'name': 'skyvow.github.io',
+            'publisher': 'skyvow',
+            'releaseDate': '2017-4',
+            'website': 'https://github.com/skyvow/skyvow.github.io',
+            'summary': 'My resume - 基于 React + React-router + ES6 前端项目'
         }
     ],
     'skills': [
@@ -201,7 +220,13 @@ export default {
             'keywords': [
                 'HTML',
                 'CSS',
-                'Javascript'
+                'Javascript',
+                'Sass',
+                'Postcss',
+                'Gulp',
+                'Webpack',
+                'Angular',
+                'React'
             ]
         },
         {
