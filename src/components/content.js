@@ -129,8 +129,8 @@ class Content extends React.Component {
                                                         <p className="text-muted">
                                                             <small>{n.startDate} - {n.endDate}</small>
                                                         </p>
-                                                        <div className="mop-wrapper">
-                                                            <p>{n.summary}</p>
+                                                        <div className="mop-wrapper space-bottom">
+                                                            <p>技术栈：{n.summary}</p>
                                                         </div>
                                                         <ul>
                                                             {n.highlights.map((v, k) => {

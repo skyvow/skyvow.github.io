@@ -1,6 +1,9 @@
 export default {
     'basics': {
         'name': '郭海龙',
+        'gender': '男',
+        'age': '25',
+        'worklife': '2',
         'label': '我是一个小胖子，没事就摸肚子',
         'picture': 'http://www.lgstatic.com/i/image/M00/A1/9D/CgqKkVioBICAXXVyAABFXV8M2hw21.jpeg',
         'email': '724355924@qq.com',
@@ -79,11 +82,24 @@ export default {
             'website': '',
             'startDate': '2017.01',
             'endDate': '2017.04',
-            'summary': 'react、react-router、redux、wepack、es6、postcss',
+            'summary': 'react + react-router + redux + wepack + es6 + postcss',
             'highlights': [
                 '基于 react + antd 前端框架开发，采用 webpack 作为自动化构建工具',
                 '基于 nodejs 开发环境，使用 webpack 自动化构建工具，实时编译代码，热更新',
                 '采用 redux 管理前端数据流'
+            ]
+        },
+        {
+            'organization': '颜值评分',
+            'position': 'web前端工程师',
+            'website': '',
+            'startDate': '2017.04',
+            'endDate': '2017.05',
+            'summary': '微信小程序',
+            'highlights': [
+                '颜值评分是一款很有趣的测试颜值的小应用，核心功能包括颜值评分、测一测夫妻相',
+                '首先通过上传照片并调用 Face++ 人脸识别服务，检测并定位图片中的人脸，返回人脸坐标',
+                '然后通过面部黄金比例计算出颜值评分',
             ]
         },
         {
@@ -92,7 +108,7 @@ export default {
             'website': '',
             'startDate': '2016.10',
             'endDate': '2016.12',
-            'summary': 'angularjs、wepack、es6、postcss',
+            'summary': 'angularjs + wepack + es6 + postcss',
             'highlights': [
                 '基于 angularjs + ionic 前端框架开发，采用 webpack 作为自动化构建工具',
                 '基于 nodejs 开发环境，使用 webpack  自动化构建工具，实时编译代码',
@@ -105,7 +121,7 @@ export default {
             'website': '',
             'startDate': '2016.04',
             'endDate': '2016.10',
-            'summary': 'angularjs、wepack、es6、postcss',
+            'summary': 'angularjs + wepack + es6 + postcss',
             'highlights': [
                 '基于 angularjs + ionic 前端框架开发，采用 webpack 作为自动化构建工具',
                 '基于 nodejs 开发环境，使用 webpack  自动化构建工具，实时编译代码',
@@ -118,7 +134,7 @@ export default {
             'website': '',
             'startDate': '2016.02',
             'endDate': '2016.03',
-            'summary': 'angularjs、wepack、es6、postcss',
+            'summary': 'angularjs + wepack + es6 + postcss',
             'highlights': [
                 '采用 webpack 自动化构建工具',
                 '采用 ES6 编写前端 js 代码',
@@ -132,7 +148,7 @@ export default {
             'website': '',
             'startDate': '2015.12',
             'endDate': '2016.02',
-            'summary': 'angularjs、wepack、es6、postcss',
+            'summary': 'angularjs + wepack + es6 + postcss',
             'highlights': [
                 '比赛助手后台采用angularjs为主体框架开发，主要完成登陆注册模块、比赛赛事创建功能及相关赛事的辅助模块：赛事管理、赛事查询、选手管理、成绩管理、证书编辑',
                 '赛事管理主要包括比赛赛事的创建至比赛结束后成绩的及时发布，以及赛后成绩查询',
@@ -145,7 +161,7 @@ export default {
             'website': '',
             'startDate': '2015.12',
             'endDate': '2016.02',
-            'summary': 'angularjs、gulp、sass',
+            'summary': 'angularjs + gulp + sass',
             'highlights': [
                 '前端基础框架搭建及简单界面设计',
                 '比赛成绩查询功能模块的实现（赛事列表、赛事科目、团队成绩、个人成绩等）',
@@ -158,7 +174,7 @@ export default {
             'website': '',
             'startDate': '2015.12',
             'endDate': '2016.02',
-            'summary': 'angularjs、gulp、sass',
+            'summary': 'angularjs + gulp + sass',
             'highlights': [
                 '跑团助手2.0开发，服务于跑友参加各种约跑活动提供便利',
                 '微信端授权确认身份后才登录',
@@ -204,6 +220,20 @@ export default {
             'releaseDate': '2016-10',
             'website': 'https://github.com/skyvow/wux',
             'summary': 'wux - 微信小程序自定义组件（对话框、指示器、五星评分...）'
+        },
+        {
+            'name': 'm-mall',
+            'publisher': 'skyvow',
+            'releaseDate': '2016-12',
+            'website': 'https://github.com/skyvow/m-mall',
+            'summary': '微信小程序-小商城前台（简单的商城 DEMO，支付未完善）'
+        },
+        {
+            'name': 'm-mall-admin',
+            'publisher': 'skyvow',
+            'releaseDate': '2016-12',
+            'website': 'https://github.com/skyvow/m-mall-admin',
+            'summary': '微信小程序-小商城后台（基于 nodejs 实现 restful API）'
         },
         {
             'name': 'skyvow.github.io',

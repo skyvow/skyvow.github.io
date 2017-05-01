@@ -25,6 +25,10 @@ class SiderBar extends React.Component {
                     <hr />
                     <div className="contact-details clearfix">
                         <div className="detail">
+                            <span className="icon"><i className="icon fs-lg icon-profile"></i></span>
+                            <span className="info">{basics.gender} {basics.age}岁 {basics.worklife}年工作经验</span>
+                        </div>
+                        <div className="detail">
                             <span className="icon"><i className="icon fs-lg icon-location"></i></span>
                             <span className="info">{basics.location}</span>
                         </div>
