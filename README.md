@@ -52,6 +52,7 @@ $ npm start
 
 |`npm run <script>`|描述|
 |------------------|-----------|
+|`dll`|动态链接库，预编译资源模块，必须在`start`之前执行一次。|
 |`start`|服务启动在 3000 端口，代码热替换开启。|
 |`build`|编译程序到 build 目录下（默认目录 ~/build）。|
 |`lint`|检查所有 .js 文件是否规范。[更多](http://eslint.org/docs/user-guide/command-line-interface.html#fix)|

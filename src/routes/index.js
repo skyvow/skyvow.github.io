@@ -3,7 +3,7 @@ export default [
         path: '/',
         getComponent (nextState, cb) {
             require.ensure([], (require) => {
-                cb(null, require('../containers/main'))
+                cb(null, require('../containers/main').default)
             }, 'index')
         },
     },
@@ -11,7 +11,7 @@ export default [
         path: '404',
         getComponent (nextState, cb) {
             require.ensure([], (require) => {
-                cb(null, require('../containers/notfound'))
+                cb(null, require('../containers/notfound').default)
             }, 'notfound')
         },
     },
