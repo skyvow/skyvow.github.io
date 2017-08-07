@@ -42,7 +42,7 @@ class SiderBar extends React.Component {
                         </div>
                         <div className="detail">
                             <span className="icon"><i className="icon fs-lg icon-link"></i></span>
-                            <span className="info"><a href={`mailto:${basics.website}`} target="_blank">{basics.website}</a></span>
+                            <span className="info"><a href={basics.website} target="_blank">{basics.website}</a></span>
                         </div>
                         <div className="detail">
                             <span className="icon" title="Languages I speak"><i className="icon fs-lg icon-language"></i></span>

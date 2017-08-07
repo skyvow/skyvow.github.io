@@ -31,11 +31,23 @@ export default {
     },
     'work': [
         {
+            'company': '美味不用等（上海）信息科技股份有限公司',
+            'position': 'web前端工程师',
+            'website': '',
+            'startDate': '2017-06',
+            'endDate': '至今',
+            'summary': '美味不用等（上海）信息科技股份有限公司',
+            'highlights': [
+                '供应链项目组',
+                '...'
+            ]
+        },
+        {
             'company': '上海毅兆信息科技有限公司',
             'position': 'web前端工程师',
             'website': '',
             'startDate': '2016.04',
-            'endDate': '至今',
+            'endDate': '2017-05',
             'summary': '上海毅兆信息科技有限公司',
             'highlights': [
                 '根据产品需求文档，进行 web 前端开发，前端主体框架选型，搭建基础框架',

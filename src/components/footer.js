@@ -8,7 +8,7 @@ class Footer extends React.Component {
     render () {
         return (
             <section className="col-md-12 card-wrapper">
-                <div className="footer">简历模板由 skyvow 设计开发，最后更新于<span className="date">2017-05-01</span></div>
+                <div className="footer">简历模板由 skyvow 设计开发，最后更新于<span className="date">2017-08-08</span></div>
             </section>
         )
     }

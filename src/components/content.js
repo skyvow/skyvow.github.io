@@ -1,12 +1,32 @@
 import React from 'react'
+import fetch from 'isomorphic-fetch'
 
 class Content extends React.Component {
     constructor (props) {
         super(props)
+        this.state = {
+            publications: [],
+        }
+    }
+
+    componentDidMount() {
+        this.getPublications()
+    }
+
+    getPublications() {
+        fetch('https://api.github.com/users/skyvow/repos')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            this.setState({
+                publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
+            })
+        })
     }
 
     render () {
-        const { basics, work, project, education, awards, publications, skills, interests, references } = this.props
+        const { basics, work, project, education, awards, skills, interests, references } = this.props
+        const { publications } = this.state
 
         return (
             <section className="col-md-9 card-wrapper pull-right">
@@ -163,15 +183,15 @@ class Content extends React.Component {
                                                     <div className="content">
                                                         <div className="header">
                                                             <h4 className="header-title">
-                                                                <a href={n.website} target="_blank">{n.name}</a>
+                                                                <a href={n.html_url} target="_blank">{n.name}</a>
                                                             </h4>
-                                                            <p className="header-text">{n.publisher}</p>
+                                                            <p className="header-text">{n.owner.login}</p>
                                                         </div>
                                                         <p className="text-muted">
                                                             <small>{n.releaseDate}</small>
                                                         </p>
                                                         <div className="mop-wrapper">
-                                                            <p>{n.summary}</p>
+                                                            <p>{n.description}</p>
                                                         </div>
                                                     </div>
                                                 </li>
