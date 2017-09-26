@@ -1,5 +1,6 @@
 export default {
     'basics': {
+        'position': 'web前端工程师',
         'name': '郭海龙',
         'gender': '男',
         'age': '25',

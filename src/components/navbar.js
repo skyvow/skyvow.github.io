@@ -47,6 +47,9 @@ class Navbar extends React.Component {
                     <i className="icon-bars"></i>
                     <span className="close-icon">×</span>
                 </a>
+                <a className={btncls} href="javascript:;" onClick={this.props.renderHTMLtoPDF} style={{ bottom: '80px' }}>
+                    <i className="glyphicon glyphicon-download-alt" style={{ lineHeight: '50px' }}></i>
+                </a>
                 <nav className={navcls}>
                     <ul className="list-unstyled">
                         <li><a href="javascript:;" onClick={() => this.scrollToAnchor('about')}><i className="mr-10 icon-board"></i>自我描述</a></li>

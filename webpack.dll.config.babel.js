@@ -25,4 +25,7 @@ export default {
             context: __dirname,
         }),
     ],
+    module: {
+        noParse: [/html2canvas/, /jspdf/],
+    },
 }

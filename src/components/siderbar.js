@@ -19,6 +19,7 @@ class SiderBar extends React.Component {
                     </div>
                     <div className="name-and-profession text-center">
                         <h3><b>{basics.name}</b></h3>
+                        <h4><b>{basics.position}</b></h4>
                         <h5 className="text-muted">{basics.label}</h5>
                     </div>
                     </span>

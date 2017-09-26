@@ -18,9 +18,11 @@ class Content extends React.Component {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            this.setState({
-                publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
-            })
+            if (!data.message) {
+                this.setState({
+                    publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
+                })
+            }
         })
     }
 

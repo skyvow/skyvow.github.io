@@ -103,6 +103,7 @@ const config = {
                 loader: 'url-loader?limit=8192&name=assets/fonts/[hash].[ext]',
             },
         ],
+        noParse: [/html2canvas/, /jspdf/],
     },
     postcss: webpack => {
         const dependent = {
