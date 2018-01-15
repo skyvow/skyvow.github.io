@@ -187,7 +187,7 @@ class Content extends React.Component {
                                                             <h4 className="header-title">
                                                                 <a href={n.html_url} target="_blank">{n.name}</a>
                                                             </h4>
-                                                            <p className="header-text">{n.owner.login}</p>
+                                                            <p className="header-text">Star: {n.stargazers_count} Fork: {n.forks_count}</p>
                                                         </div>
                                                         <p className="text-muted">
                                                             <small>{n.releaseDate}</small>

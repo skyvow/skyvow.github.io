@@ -1,6 +1,6 @@
 export default {
     'basics': {
-        'position': 'web前端工程师',
+        'position': 'Web 前端工程师',
         'name': '郭海龙',
         'gender': '男',
         'age': '25',
@@ -11,10 +11,10 @@ export default {
         'phone': '18521708248',
         'website': 'https://github.com/skyvow',
         'summary': [
-            '个人主攻 web 前端和 nodejs 开发，2年+前端开发经验。',
-            '喜欢关注 web 前端相关新技术，对于新技术有很强的学习兴趣。',
-            '喜欢折腾造轮子，不定时更新 github 小项目。',
-            '热爱前端这份工作，也热爱一切美好的事物，对于我来说，是一种责任、是一种快乐。'
+            '个人主攻 Web 前端和 NodeJS 开发，2年+前端开发经验',
+            '喜欢关注 Web 前端相关新技术（React、Angular、Vue...），对于新技术有很强的学习兴趣',
+            '喜欢折腾造轮子，不定时更新 Github 小项目（https://github.com/skyvow）',
+            '热爱前端这份工作，也热爱一切美好的事物，对于我来说，是一种责任、是一种快乐'
         ],
         'location': '上海市浦东新区',
         'profiles': [
@@ -33,25 +33,25 @@ export default {
     'work': [
         {
             'company': '美味不用等（上海）信息科技股份有限公司',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2017-06',
             'endDate': '至今',
             'summary': '美味不用等（上海）信息科技股份有限公司',
             'highlights': [
-                '供应链项目组',
+                '供应链 SaaS 软件开发与维护',
                 '...'
             ]
         },
         {
             'company': '上海毅兆信息科技有限公司',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2016.04',
             'endDate': '2017-05',
             'summary': '上海毅兆信息科技有限公司',
             'highlights': [
-                '根据产品需求文档，进行 web 前端开发，前端主体框架选型，搭建基础框架',
+                '根据产品需求文档，进行 Web 前端开发，前端主体框架选型，搭建基础框架',
                 '根据设计提供的设计稿编写静态页面',
                 'Javascript 数据处理、Ajax 交互开发、前端公共组件开发',
                 '负责配合后台开发人员，完成页面的交互及接口对接',
@@ -61,7 +61,7 @@ export default {
         },
         {
             'company': '上海连趣跑信息技术有限公司',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2015.10',
             'endDate': '2016.04',
@@ -75,7 +75,7 @@ export default {
         },
         {
             'company': '上海艺术伙伴有限公司',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2015.05',
             'endDate': '2015.10',
@@ -84,27 +84,27 @@ export default {
                 'Photoshop 对设计图进行切片',
                 'HTML5 + CSS3 编写网站页面，并保证浏览器的兼容性',
                 '负责配合后台开发人员，完成页面的交互及接口对接',
-                '负责电脑端及移动端 web 项目的前端开发'
+                '负责电脑端及移动端 Web 项目的前端开发'
             ]
         }
     ],
     'project': [
         {
             'organization': '上海中科院后台管理',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2017.01',
             'endDate': '2017.04',
-            'summary': 'react + react-router + redux + wepack + es6 + postcss',
+            'summary': 'React + React-router + Redux + Wepack + ES6 + PostCSS',
             'highlights': [
-                '基于 react + antd 前端框架开发，采用 webpack 作为自动化构建工具',
-                '基于 nodejs 开发环境，使用 webpack 自动化构建工具，实时编译代码，热更新',
-                '采用 redux 管理前端数据流'
+                '基于 React + AntD 前端框架开发，采用 Webpack 作为自动化构建工具',
+                '基于 NodeJS 开发环境，使用 Webpack 自动化构建工具，实时编译代码，热更新',
+                '采用 Redux 管理前端数据流'
             ]
         },
         {
             'organization': '颜值评分',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2017.04',
             'endDate': '2017.05',
@@ -117,64 +117,64 @@ export default {
         },
         {
             'organization': '上海高校后勤e站',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2016.10',
             'endDate': '2016.12',
-            'summary': 'angularjs + wepack + es6 + postcss',
+            'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '基于 angularjs + ionic 前端框架开发，采用 webpack 作为自动化构建工具',
-                '基于 nodejs 开发环境，使用 webpack  自动化构建工具，实时编译代码',
+                '基于 AngularJS + Ionic 前端框架开发，采用 Webpack 作为自动化构建工具',
+                '基于 NodeJS 开发环境，使用 Webpack  自动化构建工具，实时编译代码',
                 '前端模块化开发，通过 templateProvider 动态加载 html 模板，resolve 动态加载所需 js'
             ]
         },
         {
             'organization': '智慧微校园',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2016.04',
             'endDate': '2016.10',
-            'summary': 'angularjs + wepack + es6 + postcss',
+            'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '基于 angularjs + ionic 前端框架开发，采用 webpack 作为自动化构建工具',
-                '基于 nodejs 开发环境，使用 webpack  自动化构建工具，实时编译代码',
+                '基于 AngularJS + Ionic 前端框架开发，采用 Webpack 作为自动化构建工具',
+                '基于 NodeJS 开发环境，使用 Webpack  自动化构建工具，实时编译代码',
                 '前端模块化开发，通过 templateProvider 动态加载 html 模板，resolve 动态加载所需 js'
             ]
         },
         {
             'organization': '比赛助手后台开发 前端重构',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2016.02',
             'endDate': '2016.03',
-            'summary': 'angularjs + wepack + es6 + postcss',
+            'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '采用 webpack 自动化构建工具',
+                '采用 Webpack 自动化构建工具',
                 '采用 ES6 编写前端 js 代码',
-                '采用 postcss 后处理器编写 css',
+                '采用 PostCSS 后处理器编写 CSS',
                 '前端模块化开发克服了多人协作开发的问题，使得研发成本大大降低、快速上线'
             ]
         },
         {
             'organization': '比赛助手后台开发',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2015.12',
             'endDate': '2016.02',
-            'summary': 'angularjs + wepack + es6 + postcss',
+            'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '比赛助手后台采用angularjs为主体框架开发，主要完成登陆注册模块、比赛赛事创建功能及相关赛事的辅助模块：赛事管理、赛事查询、选手管理、成绩管理、证书编辑',
+                '比赛助手后台采用AngularJS为主体框架开发，主要完成登陆注册模块、比赛赛事创建功能及相关赛事的辅助模块：赛事管理、赛事查询、选手管理、成绩管理、证书编辑',
                 '赛事管理主要包括比赛赛事的创建至比赛结束后成绩的及时发布，以及赛后成绩查询',
                 '选手管理主要包括选手信息列表查询及导入、编辑、新增等操作'
             ]
         },
         {
             'organization': '比赛成绩查询开发',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2015.12',
             'endDate': '2016.02',
-            'summary': 'angularjs + gulp + sass',
+            'summary': 'AngularJS + Gulp + Sass',
             'highlights': [
                 '前端基础框架搭建及简单界面设计',
                 '比赛成绩查询功能模块的实现（赛事列表、赛事科目、团队成绩、个人成绩等）',
@@ -183,11 +183,11 @@ export default {
         },
         {
             'organization': '跑团助手2.0开发',
-            'position': 'web前端工程师',
+            'position': 'Web 前端工程师',
             'website': '',
             'startDate': '2015.12',
             'endDate': '2016.02',
-            'summary': 'angularjs + gulp + sass',
+            'summary': 'AngularJS + Gulp + Sass',
             'highlights': [
                 '跑团助手2.0开发，服务于跑友参加各种约跑活动提供便利',
                 '微信端授权确认身份后才登录',
@@ -246,7 +246,7 @@ export default {
             'publisher': 'skyvow',
             'releaseDate': '2016-12',
             'website': 'https://github.com/skyvow/m-mall-admin',
-            'summary': '微信小程序-小商城后台（基于 nodejs 实现 restful API）'
+            'summary': '微信小程序-小商城后台（基于 NodeJS 实现 restful API）'
         },
         {
             'name': 'skyvow.github.io',
@@ -265,7 +265,7 @@ export default {
                 'CSS',
                 'Javascript',
                 'Sass',
-                'Postcss',
+                'PostCSS',
                 'Gulp',
                 'Webpack',
                 'Angular',
@@ -276,7 +276,7 @@ export default {
             'name': '后端',
             'level': 'master',
             'keywords': [
-                'Nodejs',
+                'NodeJS',
                 'Python'
             ]
         }
