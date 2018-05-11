@@ -39,7 +39,9 @@
 #
 ################################################
 
-#build/**
+build/**
+src/assets/js/**
+src/assets/css/**
 src/*.hot-update.*
 .happypack/**
 manifest.json

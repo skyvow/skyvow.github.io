@@ -6,14 +6,16 @@ import pkg from './package.json'
 // 公共模块
 const deps = lodash.uniq(Object.keys(pkg.dependencies))
 const vendor = lodash.pullAll(deps, [])
+const jsSourcePath = path.join(__dirname, 'src')
+// const buildPath = path.join(__dirname, 'build/demo')
 
 export default {
-    context: path.join(__dirname, ''),
+    context: jsSourcePath,
     entry: {
         vendor,
     },
     output: {
-        path: './build/assets/js/',
+        path: 'src/assets/js/',
         filename: '[name].js',
         library: '[name]',
     },

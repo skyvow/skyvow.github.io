@@ -33,6 +33,9 @@ const isProd = ENV === 'production' || ENV === 'prod'
 // 公共模块
 const deps = lodash.uniq(Object.keys(pkg.dependencies))
 const vendor = lodash.pullAll(deps, [])
+const jsSourcePath = path.join(__dirname, 'src')
+const buildPath = path.join(__dirname, 'build/demo')
+const sourcePath = path.join(__dirname, 'src')
 
 // 开启 happypack 多进程的模式加速编译
 const happyPackHandle = {
@@ -68,16 +71,16 @@ happyPackHandle
 
 // 配置参数
 const config = {
-    context: path.join(__dirname, ''),
+    context: jsSourcePath,
     entry: {
         app: [
-            './src/app.js',
+            './app.js',
         ],
         vendor,
     },
     output: {
-        path: path.resolve(__dirname, 'build'),
-        publicPath: 'build/',
+        path: buildPath,
+        publicPath: '',
         filename: 'assets/js/app.js',
         chunkFilename: 'chunk/[name].chunk.js',
     },
@@ -133,7 +136,7 @@ const config = {
         new webpack.NoErrorsPlugin(),
         // 复制静态文件
         new CopyWebpackPlugin([{
-            from: './src/assets/',
+            from: './assets/',
             to: './assets/',
         }, ]),
         // 合并所有的 CSS 文件
@@ -141,9 +144,11 @@ const config = {
             allChunks: true,
         }),
         // 自动生成页面
-        // new HtmlWebpackPlugin({
-        //     template: path.join(__dirname, 'index.html'),
-        // }),
+        new HtmlWebpackPlugin({
+            template: path.join(sourcePath, isDev ? 'index.dev.html' : 'index.html'),
+            path: buildPath,
+            filename: 'index.html',
+        }),
     ],
     resolve: {
         extensions: [
@@ -154,8 +159,18 @@ const config = {
         ],
         root: [
             path.resolve(__dirname),
-            path.resolve(__dirname, 'src'),
+            jsSourcePath,
         ],
+    },
+    devServer: {
+        contentBase: isProd ? buildPath : sourcePath,
+        // historyApiFallback: true,
+        port: 3000,
+        // compress: isProd,
+        hot: !isProd,
+        inline: !isProd,
+        // disableHostCheck: true,
+        host: '0.0.0.0',
     },
 }
 
@@ -175,6 +190,10 @@ if (isDev) {
             }),
             // happypack 插件
             ...happyPackHandle.cachePlugins,
+            // 开启全局的模块热替换(HMR)
+            new webpack.HotModuleReplacementPlugin(),
+            // 当模块热替换(HMR)时在浏览器控制台输出对用户更友好的模块名字信息
+            new webpack.NamedModulesPlugin()
             // 打开浏览器
             // new OpenBrowserPlugin({
             //     url: 'http://localhost:3000',

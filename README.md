@@ -4,11 +4,11 @@
 
 ## 技术选型
 
-* [react](https://github.com/facebook/react)
-* [react-router](https://github.com/rackt/react-router)
-* [webpack](https://github.com/webpack/webpack)
-* [babel](https://github.com/babel/babel)
-* [eslint](http://eslint.org)
+* [React](https://github.com/facebook/react)
+* [React-router](https://github.com/rackt/react-router)
+* [Webpack](https://github.com/webpack/webpack)
+* [Babel](https://github.com/babel/babel)
+* [ESlint](http://eslint.org)
 
 ## 目录结构
 
@@ -56,6 +56,7 @@ $ npm start
 |`start`|服务启动在 3000 端口，代码热替换开启。|
 |`build`|编译程序到 build 目录下（默认目录 ~/build）。|
 |`lint`|检查所有 .js 文件是否规范。[更多](http://eslint.org/docs/user-guide/command-line-interface.html#fix)|
+|`ghpages`|部署 GitHub Pages 站点。|
 
 ## 贡献
 

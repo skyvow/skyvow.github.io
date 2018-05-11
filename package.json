@@ -33,6 +33,7 @@
     "eslint-plugin-react": "^6.10.3",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "ghpages": "^0.0.10",
     "happypack": "^3.1.0",
     "html-webpack-plugin": "^2.28.0",
     "lodash": "^4.17.4",
@@ -58,10 +59,11 @@
     "webpack-dev-server": "^1.16.5"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --progress --colors --host 0.0.0.0 --port 3000",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --progress --colors",
     "lint": "eslint --fix --ext .js src",
     "dll": "webpack --config ./webpack.dll.config.babel.js",
-    "build": "cross-env NODE_ENV=production webpack --progress --profile --colors"
+    "build": "cross-env NODE_ENV=production webpack --progress --colors",
+    "ghpages": "gh-pages -d ./build/demo"
   },
   "author": "skyvow",
   "license": "MIT"

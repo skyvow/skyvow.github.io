@@ -3,17 +3,17 @@ export default {
         'position': 'Web 前端工程师',
         'name': '郭海龙',
         'gender': '男',
-        'age': '25',
-        'worklife': '2',
+        'age': '26',
+        'worklife': '3',
         'label': '我是一个小胖子，没事就摸肚子',
         'picture': 'http://www.lgstatic.com/i/image/M00/A1/9D/CgqKkVioBICAXXVyAABFXV8M2hw21.jpeg',
         'email': '724355924@qq.com',
         'phone': '18521708248',
         'website': 'https://github.com/skyvow',
         'summary': [
-            '个人主攻 Web 前端和 NodeJS 开发，2年+前端开发经验',
+            '个人主攻 Web 前端和 NodeJS 开发，3年+前端开发经验，参与或独立开发过多个核心项目，项目类型涉及：电子商务、教育服务、企业管理、SPA 应用（PC/Moblie）等等',
             '喜欢关注 Web 前端相关新技术（React、Angular、Vue...），对于新技术有很强的学习兴趣',
-            '喜欢折腾造轮子，不定时更新 Github 小项目（https://github.com/skyvow）',
+            '喜欢折腾造轮子，有一些简单的开源项目，不定时会更新 Github 小项目（https://github.com/skyvow）',
             '热爱前端这份工作，也热爱一切美好的事物，对于我来说，是一种责任、是一种快乐'
         ],
         'location': '上海市浦东新区',
@@ -39,6 +39,7 @@ export default {
             'endDate': '至今',
             'summary': '美味不用等（上海）信息科技股份有限公司',
             'highlights': [
+                '参与供应链产品原型需求分析及交互设计',
                 '供应链 SaaS 软件开发与维护',
                 '...'
             ]
@@ -90,19 +91,6 @@ export default {
     ],
     'project': [
         {
-            'organization': '上海中科院后台管理',
-            'position': 'Web 前端工程师',
-            'website': '',
-            'startDate': '2017.01',
-            'endDate': '2017.04',
-            'summary': 'React + React-router + Redux + Wepack + ES6 + PostCSS',
-            'highlights': [
-                '基于 React + AntD 前端框架开发，采用 Webpack 作为自动化构建工具',
-                '基于 NodeJS 开发环境，使用 Webpack 自动化构建工具，实时编译代码，热更新',
-                '采用 Redux 管理前端数据流'
-            ]
-        },
-        {
             'organization': '颜值评分',
             'position': 'Web 前端工程师',
             'website': '',
@@ -110,9 +98,25 @@ export default {
             'endDate': '2017.05',
             'summary': '微信小程序',
             'highlights': [
-                '颜值评分是一款很有趣的测试颜值的小应用，核心功能包括颜值评分、测一测夫妻相',
-                '首先通过上传照片并调用 Face++ 人脸识别服务，检测并定位图片中的人脸，返回人脸坐标',
-                '然后通过面部黄金比例计算出颜值评分',
+                '2017年4月到2017年5月独立负责开发的一款颜值评分项目；',
+                '由于是个人项目，一个人担任多项角色负责参与产品需求、页面交互设计过程、前后端的开发、Ubuntu 16.04 服务器部署等工作；',
+                '前端采用微信小程序开发，在此封装了高效的可复用的组件模块，通过组件化开发极大的提升了开发效率；后端采用 NodeJS 开发，基于 Express 框架提供 RESTful API；',
+                '项目中采用 Face++ 人脸识别服务技术，检测并定位图片中的人脸，返回人脸坐标，然后通过面部黄金比例计算出颜值评分；',
+                '项目上线后用户体验流畅，用户数量不断增加，至此已达 3 万多。'
+            ]
+        },
+        {
+            'organization': '上海中科院后台管理',
+            'position': 'Web 前端工程师',
+            'website': '',
+            'startDate': '2017.01',
+            'endDate': '2017.04',
+            'summary': 'React + React-router + Redux + Wepack + ES6 + PostCSS',
+            'highlights': [
+                '2017年1月到2017年4月我们四人小组负责开发的一款 CMS 内容管理系统项目包括内容管理、模板管理、发布管理，为上海中科院提供可视化后台管理功能；',
+                '作为团队中的核心程序员，我负责项目的调研，根据产品需求文档进行需求拆分，技术选型与搭建框架等开发；',
+                '项目基于 eact + React-router + Redux + Wepack + ES6 + PostCSS 前端框架配合 NodeJS 开发环境开发，采用 Webpack 作为自动化构建工具，实时编译代码，热更新；',
+                '项目上线后，前端性能表现良好，测试结果也没有任何异常，客户也很满意。'
             ]
         },
         {
@@ -123,9 +127,10 @@ export default {
             'endDate': '2016.12',
             'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '基于 AngularJS + Ionic 前端框架开发，采用 Webpack 作为自动化构建工具',
-                '基于 NodeJS 开发环境，使用 Webpack  自动化构建工具，实时编译代码',
-                '前端模块化开发，通过 templateProvider 动态加载 html 模板，resolve 动态加载所需 js'
+                '2016年10月到2016年12月我们四人小组负责开发一款会议管理系统的项目，包括会议预订、信息发布、微信签到、扫码签到等功能；',
+                '作为团队中的核心程序员，我负责项目的调研，根据产品需求文档进行需求拆分，技术选型与搭建框架等开发；',
+                '项目基于 AngularJS + Wepack + ES6 + PostCSS 前端框架配合 NodeJS 开发环境开发，采用 Webpack 作为自动化构建工具，实时编译代码；',
+                '项目上线后，已多次试点于中小型重要会议中，参会人员能随时轻松查看活动信息、下载资料，更为便捷。'
             ]
         },
         {
@@ -136,9 +141,10 @@ export default {
             'endDate': '2016.10',
             'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '基于 AngularJS + Ionic 前端框架开发，采用 Webpack 作为自动化构建工具',
-                '基于 NodeJS 开发环境，使用 Webpack  自动化构建工具，实时编译代码',
-                '前端模块化开发，通过 templateProvider 动态加载 html 模板，resolve 动态加载所需 js'
+                '2016年4月到2016年10月我们四人小组负责开发一款智慧微校园的项目，包括班级管理、成绩管理、信息发布，报修管理等功能，将教学、科研、管理和校园生活进行充分融合；',
+                '作为团队中的核心程序员，我负责项目的调研，根据产品需求文档进行需求拆分，技术选型与搭建框架等开发；',
+                '项目基于 AngularJS + Wepack + ES6 + PostCSS 前端框架配合 NodeJS 开发环境开发，采用 Webpack 作为自动化构建工具，实时编译代码；',
+                '项目正式在龚路小学上线之后，提升了学校日常管理效率，课堂效率和质量直线走高，受到教师与家长的广泛好评。'
             ]
         },
         {
@@ -149,10 +155,7 @@ export default {
             'endDate': '2016.03',
             'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '采用 Webpack 自动化构建工具',
-                '采用 ES6 编写前端 js 代码',
-                '采用 PostCSS 后处理器编写 CSS',
-                '前端模块化开发克服了多人协作开发的问题，使得研发成本大大降低、快速上线'
+                '项目基于 AngularJS + Wepack + ES6 + PostCSS 重构项目，克服了多人协作开发的问题，使得研发成本大大降低、快速上线。'
             ]
         },
         {
@@ -163,7 +166,7 @@ export default {
             'endDate': '2016.02',
             'summary': 'AngularJS + Wepack + ES6 + PostCSS',
             'highlights': [
-                '比赛助手后台采用AngularJS为主体框架开发，主要完成登陆注册模块、比赛赛事创建功能及相关赛事的辅助模块：赛事管理、赛事查询、选手管理、成绩管理、证书编辑',
+                '比赛助手后台采用 AngularJS + Wepack + ES6 + PostCSS 为主体框架开发，主要完成登陆注册模块、比赛赛事创建功能及相关赛事的辅助模块：赛事管理、赛事查询、选手管理、成绩管理、证书编辑',
                 '赛事管理主要包括比赛赛事的创建至比赛结束后成绩的及时发布，以及赛后成绩查询',
                 '选手管理主要包括选手信息列表查询及导入、编辑、新增等操作'
             ]
@@ -176,7 +179,7 @@ export default {
             'endDate': '2016.02',
             'summary': 'AngularJS + Gulp + Sass',
             'highlights': [
-                '前端基础框架搭建及简单界面设计',
+                '前端基础框架搭建及简单界面设计，基于 AngularJS + Gulp + Sass 开发',
                 '比赛成绩查询功能模块的实现（赛事列表、赛事科目、团队成绩、个人成绩等）',
                 '根据特殊的比赛定制不同的查询页面'
             ]
@@ -189,6 +192,7 @@ export default {
             'endDate': '2016.02',
             'summary': 'AngularJS + Gulp + Sass',
             'highlights': [
+                '项目基于 AngularJS + Gulp + Sass 开发',
                 '跑团助手2.0开发，服务于跑友参加各种约跑活动提供便利',
                 '微信端授权确认身份后才登录',
                 '跑团团长可以发布活动、编辑活动、取消活动',
