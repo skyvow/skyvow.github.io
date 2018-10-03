@@ -15,15 +15,15 @@ class Content extends React.Component {
 
     getPublications() {
         fetch('https://api.github.com/users/skyvow/repos')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            if (!data.message) {
-                this.setState({
-                    publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
-                })
-            }
-        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                if (!data.message) {
+                    this.setState({
+                        publications: data.filter(n => !n.fork).sort((a, b) => a.stargazers_count < b.stargazers_count).slice(0, 6),
+                    })
+                }
+            })
     }
 
     render () {

@@ -1,22 +1,21 @@
 import webpack from 'webpack'
 import path from 'path'
-import lodash from 'lodash'
 import pkg from './package.json'
 
 // 公共模块
-const deps = lodash.uniq(Object.keys(pkg.dependencies))
-const vendor = lodash.pullAll(deps, [])
+const vendor = Object.keys(pkg.dependencies)
 const jsSourcePath = path.join(__dirname, 'src')
 // const buildPath = path.join(__dirname, 'build/demo')
 
 export default {
+    mode: 'development',
     context: jsSourcePath,
     entry: {
         vendor,
     },
     output: {
-        path: 'src/assets/js/',
-        filename: '[name].js',
+        path: path.join(__dirname, 'src/assets/'),
+        filename: '[name].dll.js',
         library: '[name]',
     },
     plugins: [

@@ -14,14 +14,14 @@ class SiderBar extends React.Component {
             <section className="col-md-3 card-wrapper profile-card-wrapper affix">
                 <div className="card profile-card">
                     <span className="profile-pic-container">
-                    <div className="profile-pic">
-                        <img className="media-object img-circle center-block" src={basics.picture || picture} />
-                    </div>
-                    <div className="name-and-profession text-center">
-                        <h3><b>{basics.name}</b></h3>
-                        <h4><b>{basics.position}</b></h4>
-                        <h5 className="text-muted">{basics.label}</h5>
-                    </div>
+                        <div className="profile-pic">
+                            <img className="media-object img-circle center-block" src={basics.picture || picture} />
+                        </div>
+                        <div className="name-and-profession text-center">
+                            <h3><b>{basics.name}</b></h3>
+                            <h4><b>{basics.position}</b></h4>
+                            <h5 className="text-muted">{basics.label}</h5>
+                        </div>
                     </span>
                     <hr />
                     <div className="contact-details clearfix">

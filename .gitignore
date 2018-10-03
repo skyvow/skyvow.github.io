@@ -41,9 +41,9 @@
 
 build/**
 src/assets/js/**
-src/assets/css/**
 src/*.hot-update.*
 .happypack/**
+.cache-loader/**
 manifest.json
 
 

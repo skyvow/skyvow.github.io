@@ -24,7 +24,7 @@ class NotFound extends React.Component {
                 <span onClick={this.goIndex} className="link-style">跳转首页</span>
             </div>
 	    )
-  }
+    }
 }
 
 export default NotFound
