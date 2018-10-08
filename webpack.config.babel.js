@@ -26,6 +26,7 @@ const jsSourcePath = path.join(__dirname, 'src')
 const buildPath = path.join(__dirname, 'build/demo')
 const sourcePath = path.join(__dirname, 'src')
 const assetsPath = 'assets/'
+const port = process.env.PORT || 3000
 
 // 开启 happypack 多进程的模式加速编译
 class HappyPackPlugin {
@@ -187,7 +188,7 @@ const config = {
     devServer: {
         contentBase: isProd ? buildPath : sourcePath,
         // historyApiFallback: true,
-        port: 3000,
+        port,
         // compress: isProd,
         hot: !isProd,
         noInfo: true,

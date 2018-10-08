@@ -1,6 +1,7 @@
 import React from 'react'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
+import { hot } from 'react-hot-loader'
 import SiderBar from '../components/siderbar'
 import Footer from '../components/footer'
 import Content from '../components/content'
@@ -72,4 +73,4 @@ class Main extends React.Component {
     }
 }
 
-export default Main
+export default hot(module)(Main)

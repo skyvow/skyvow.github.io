@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
+    "@babel/node": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
@@ -36,6 +37,8 @@
     "css-loader": "^1.0.0",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
+    "express": "^4.16.3",
+    "express-http-proxy": "^1.4.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "happypack": "^5.0.0",
@@ -58,15 +61,19 @@
     "postcss-sprites": "^4.2.1",
     "progress-bar-webpack-plugin": "^1.11.0",
     "raw-loader": "^0.5.1",
+    "react-hot-loader": "^4.3.11",
     "style-loader": "^0.23.0",
     "uglify-loader": "^3.0.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-hot-middleware": "^2.24.2"
   },
   "scripts": {
+    "server": "cross-env NODE_ENV=development babel-node server.babel.js",
     "start": "cross-env NODE_ENV=development webpack-dev-server",
     "lint": "eslint --fix --ext .js src",
     "dll": "webpack --config ./webpack.dll.config.babel.js",
